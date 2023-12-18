@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finds - Kokoa clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 상태표시창 -->
+    <div class="status-bar">       
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>14:00</span>
+        </div>
+        <div class="status-bar__column">
+            <span>80%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+            <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+    </div>
+
+    <!-- 앱 최상단 : Find  -->
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><a href="setting.html"><i class="fa-solid fa-gear fa-lg"></i></a></span>
+        </div>
+    </header>
+
+    <!-- 메인 스크린 -->
+    <main class="main-screen">
+        <!-- 친구 직접 추가 div -->
+        <div class="find-icons">
+                <!-- QR code -->
+                <div class="find-icons__icon">
+                    <i class="fa-solid fa-qrcode fa-2x"></i>
+                    <span>QR Code</span>
+                </div>
+
+                <!-- Address -->
+                <div class="find-icons__icon">
+                    <i class="fa-regular fa-address-book fa-2x"></i>
+                    <span>Add by Contacts</span>
+                </div>
+
+                <!--  ID  -->
+                <div class="find-icons__icon">
+                    <i class="fa-regular fa-circle-user fa-2x"></i>
+                    <span>Add by ID</span>
+
+                <!--  Invite -->
+                </div>
+                <div class="find-icons__icon">
+                    <i class="fa-regular fa-envelope fa-2x"></i>
+                    <span>Invite</span>
+                </div>
+        </div>
+
+        <!-- 친구 추천 div -->
+        <div class="recommended-friends">
+            <h6 class="recommended-freinds__title"> Recommended Feiends</h6>
+            <span>You have no recommended friends.</span>
+        </div>
+        
+        <!-- 오픈 챗 -->
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4 class="open-chat__title">Open Chat</h4>
+                <div>
+                    <span>Go to openchat home</span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                </div>
+            </div>
+            <!-- 오픈 챗 목록 -->
+            <div class="open-post">
+                <!-- 오픈 챗 목록 왼쪽 -->
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#YONEX KOREA</h5>
+                    <h6 class="open-post__hashtags">#요넥스#배드민턴#YonexKorea</h6>
+                    <div class="open-post__members">
+                        <img src="data:image/png;base64,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" />
+                        <span class="open-post__memeber-count">802 Members</span>
+                        <div class="divider"></div>
+                        <span class="open-post__member-status">Active</span>
+                    </div>
+                </div>
+                <!-- 오픈 챗 목록 오른쪽 -->
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img src="data:image/png;base64,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">
+                        <div class="open-post__heart-count">
+                            <i class="fas fa-heart fa-sm"></i>
+                            <span>326</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- 네비게이션 바 -->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="fa-regular fa-user fa-2x"></i>
+                </a>
+            </li >
+            <li class="nav__btn">
+                <span class="nav__notification badge">1</span>
+                <a class="nav__link" href="chats.html"><i class="fa-regular fa-comment fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__unread"> </span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/de97c4dde9.js" 
+    crossorigin="anonymous">
+    </script>
+</body>
+</html>

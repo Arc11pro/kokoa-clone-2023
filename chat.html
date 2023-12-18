@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatting - Kokoa clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="chat-screen">
+    <!-- 상태표시창 -->
+    <div class="status-bar">       
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>14:00</span>
+        </div>
+        <div class="status-bar__column">
+            <span>80%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+            <i class="fa-solid fa-bolt-lightning fa"></i>
+        </div>
+    </div>
+
+     <!-- setting 최상단 -->
+    <header class="alt-header">
+        <div class="alt-header-column">
+            <a href="chats.html"><i class="fa-solid fa-chevron-left fa-xl"></i></a>
+        </div>
+        <div class="alt-header-column">
+            <span>정민균</span>
+        </div>
+        <div class="alt-header-column">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="chat-screen__main-screen chat">
+        <div class="chat__timestamp">
+            Friday, December 13, 2023
+        </div>
+
+        <div class="message-row message-row--other">
+            <img src="jmk.jpeg">
+            <div class="message-row__content">
+                <span class="message__author">정민균</span>
+                <div class="message__info">
+                    <span class="message_bubble">Hi!</span>
+                    <span class="message_time">21:45</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-row message-row--own">
+            <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message_bubble">Hi nice to meet you!</span>
+                    <span class="message_time">21:45</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <form class="reply">
+        <div class="reply__column">
+            <i class="fa-regular fa-square-plus"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" placeholder="Write a message...">
+            <i class="far fa-smile-wink"></i>
+            <button>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>
+ 
+    <script src="https://kit.fontawesome.com/de97c4dde9.js" 
+    crossorigin="anonymous">
+    </script>
+</body>
+</html>

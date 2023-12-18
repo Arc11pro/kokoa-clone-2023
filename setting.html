@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting - Kokoa clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 상태표시창 -->
+    <div class="status-bar">       
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>14:00</span>
+        </div>
+        <div class="status-bar__column">
+            <span>80%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+            <i class="fa-solid fa-bolt-lightning fa"></i>
+        </div>
+    </div>
+
+     <!-- setting 최상단 -->
+    <header class="alt-header">
+        <div class="alt-header-column">
+            <i class="fa-solid fa-chevron-left fa-xl"></i>
+        </div>
+        <div class="alt-header-column">
+            <span>Settings</span>
+        </div>
+        <div class="alt-header-column">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        </div>
+    </header>
+
+    <!-- setting 목록-->
+    <main class="settings">
+        <div class="setting__main-setting"> <!--notice -->
+            <div class="setting-bar">
+                <div class="setting-bar__icon-text">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Notices</span>
+                </div>
+                <div class="setting-bar__etc">
+                </div>
+            </div>
+            <div class="setting-bar"> <!--kokoa lab -->
+                <div class="setting-bar__icon-text">
+                    <i class="fa-solid fa-flask"></i>
+                    <span> Kokoa Lab</span>
+                </div>
+                <div class="setting-bar__etc">
+                </div>
+            </div>
+            <div class="setting-bar"> <!--version -->
+                <div class="setting-bar__icon-text">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Version</span>
+                </div>
+                <div class="setting-bar__etc">
+                    <span>Latest Version</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="setting__sub-setting">
+            <div class="setting-bar">
+                <div class="setting-bar__icon-text">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>Privacy</span>
+                </div>
+                <div class="setting-bar__etc">
+
+                </div>
+            </div>
+            <div class="setting-bar">
+                <div class="setting-bar__icon-text">
+                    <i class="fa-regular fa-bell"></i>
+                    <span>Notifications</span>
+                </div>
+                <div class="setting-bar__etc">
+                    
+                </div>
+            </div>
+            <div class="setting-bar">
+                <div class="setting-bar__icon-text">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>Friends</span>
+                </div>
+                <div class="setting-bar__etc">
+
+                </div>
+            </div>
+            <div class="setting-bar">
+                <div class="setting-bar__icon-text">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>Chats</span>
+                </div>
+                <div class="setting-bar__etc">
+
+                </div>
+            </div>
+            <div class="setting-bar">
+                <div class="setting-bar__icon-text">
+                    <i class="fa-solid fa-tv"></i>
+                    <span>Display</span>
+                </div>
+                <div class="setting-bar__etc">
+
+                </div>
+            </div>
+            <div class="setting-bar">
+                <div class="setting-bar__icon-text">
+                    <i class="fa-solid fa-brush"></i>
+                    <span>Themes</span>
+                </div>
+                <div class="setting-bar__etc">
+                    <span>Default theme</span>
+                </div>
+            </div>
+            <div class="setting-bar">
+                <div class="setting-bar__icon-text">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call</span>
+                </div>
+                <div class="setting-bar__etc">
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 네비게이션 바 -->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="fa-regular fa-user fa-2x"></i>
+                </a>
+            </li >
+            <li class="nav__btn">
+                <span class="nav__notification badge">1</span>
+                <a class="nav__link" href="chats.html"><i class="fa-regular fa-comment fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__unread"> </span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/de97c4dde9.js" 
+    crossorigin="anonymous">
+    </script>
+</body>
+</html>

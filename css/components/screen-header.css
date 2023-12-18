@@ -1,0 +1,53 @@
+.screen-header{
+    margin: 25px 0px 0px 0px;
+    padding: var(--horizontal-space);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 20px;
+}
+
+.screen-header__title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.screen-header__icons span{
+    margin-left: 25px;
+}
+
+
+@keyframes rotateCog {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes twistDance {
+    0% {
+        transform: none;
+    }
+
+    50% {
+        transform: rotateZ(15deg);
+    }
+
+    100%{
+        transform: none;
+    }
+}
+
+.screen-header__icons .fa-gear {
+    animation: rotateCog 3s linear infinite;
+}
+
+.screen-header__icons .fa-music {
+    animation: twistDance 1s ease-in-out infinite;
+
+}
